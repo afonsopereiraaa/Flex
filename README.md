@@ -11,6 +11,7 @@
 <p align="center">
   </a>
   <img src="https://github.com/flexplang/Flex/raw/main/static.png"></a>
+  <a href="https://gitter.im/flexprg/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
   </a>
 </p>
 
