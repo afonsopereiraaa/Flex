@@ -1,7 +1,7 @@
 # Flex
 
 ## Introduction
-Flex is a custom programming language I made because I don't like c++ very much (Flex's interpreter is written in c++ though). Flex scripts have the file extension .FX. The base syntax and formatting I would say is quite similar to C# or Python, but differs as task complexity increases. It has support for graphics using SDL2, and by default is not enabled.
+Flex is a custom programming language I made because I don't like c++ very much (Flex's interpreter is written in c++ though). Flex scripts have the file extension .ZS. The base syntax and formatting I would say is quite similar to C# or Python, but differs as task complexity increases. It has support for graphics using SDL2, and by default is not enabled.
 
 ## Installation
 Downloading or installing is very simple, here is how depending on your version and operating system:
@@ -11,9 +11,9 @@ Navigate to the most recent release and download Flex-Win-Installer.zip.
 Unzip Flex-Win-Installer.zip and open the unzipped folder.
 Inside is a single file titled Flex-Setup.exe. Run it, and follow the setup instructions.
 Now that it is installed, there are a few ways to use it:
-(recommended) Any Flex file that ends with .FX will automatically be associated with the interpreter. Just double-click it, and the interpreter will run.
-Drag and drop any .FX script directly onto the executable in your desktop.
-Use command line, providing path to interpreter and then to script like so: > ./Flex.exe example.fx
+(recommended) Any Flex file that ends with .ZS will automatically be associated with the interpreter. Just double-click it, and the interpreter will run.
+Drag and drop any .ZS script directly onto the executable in your desktop.
+Use command line, providing path to interpreter and then to script like so: > ./Flex.exe example.ZS
 
 
 ## Here is some example code:
@@ -75,7 +75,7 @@ func Main()
 {
     int screenWidth = 500
     int screenHeight = 500
-    FX.Graphics.Init("Title of window", screenWidth, screenHeight)
+    ZS.Graphics.Init("Title of window", screenWidth, screenHeight)
     // After graphics are initialized, the main function will not finish.
     // Instead, Start() will be called a single time, then Update() every frame after that.
 }
@@ -89,14 +89,14 @@ func Start()
     float rotation = 0
 
     // Sprite object, stores (and loads from file) the texture, location, scale, and rotation
-    global Sprite exampleSprite = FX.Graphics.Sprite("./square.png", position, scale, rotation)
+    global Sprite exampleSprite = ZS.Graphics.Sprite("./square.png", position, scale, rotation)
 }
 
 // Executes each frame
 func Update(deltaTime)
 {
     // Draws the image created in Start(). This is usually at the end of update.
-    FX.Graphics.Draw(exampleSprite)   
+    ZS.Graphics.Draw(exampleSprite)   
 }
 ```
 
