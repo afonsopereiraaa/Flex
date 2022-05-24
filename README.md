@@ -40,8 +40,8 @@ Unzip Flex-Win-Installer.zip and open the unzipped folder.
 Inside is a single file titled Flex-Setup.exe. Run it, and follow the setup instructions.
 Now that it is installed, there are a few ways to use it:
 (recommended) Any Flex file that ends with .ZS will automatically be associated with the interpreter. Just double-click it, and the interpreter will run.
-Drag and drop any .ZS script directly onto the executable in your desktop.
-Use command line, providing path to interpreter and then to script like so: > ./Flex.exe example.ZS
+Drag and drop any .FX script directly onto the executable in your desktop.
+Use command line, providing path to interpreter and then to script like so: > ./Flex.exe example.fx
 
 Linux
 
